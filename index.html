@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <title>Simple Interest Calculator</title>
 <html>
-    <head>
+<head>
+    <!-- link to the javascript file. -->
     <script src="script.js"></script>
+    <!-- link to the stylesheet file. -->
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="maindiv">
-            <h1>Simple Interest Calculator</h1>
-
-            Amount <input type="number" id="principal">  <br /><br />
-            Interest Rate <input type="range" onchange="updateRate()" id="rate" min=1 max=20 step=0.25 value=10.25>
-            <span id="rate_val">
-                10.25%
-            </span>
-            <br /><br />
-            No. of Years <select id="years">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <br /><br />
-            <button onclick="compute()">Compute Interest</button>
-            <span id="result"></span>
-            <br /><br />
-            <footer>
-                &#169; Everyone Can Get Rich
-            </footer>
-
-        </div>
-    </body>
+</head>
+<body>
+    <!-- style properties for this element in the CSS file. -->
+    <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+        <!-- numeric input, user has to type. -->
+        Amount <input type="number" id="principal">  <br /><br />
+        <!-- slider input, user has to drag a button. -->
+        Interest Rate <input type="range" onchange="updateRate()" id="rate" min=1 max=20 step=0.25 value=10.25>
+        <span id="rate_val">
+            10.25%
+        </span>
+        <br /><br />
+        <!-- drop down box input. -->
+        No. of Years <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br /><br />
+        <!-- code is present in the script.js file -->
+        <button onclick="compute()">Compute Interest</button>
+        <!-- placeholder where the results will be shown -->
+        <span id="result"></span>
+        <br /><br />
+              <footer>
+                  <!-- instructions are different than the comment below -->
+                  &#169; Everyone Can Get Rich
+              </footer>
+    </div>
+</body>
 </html>

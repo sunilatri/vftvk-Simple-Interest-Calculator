@@ -1,17 +1,18 @@
+/*Part of the Simple Calculator app*/
 body {
     background-color: black;
     font-family: arial;
     color: white
 }
 h1{color:grey; font-family:verdana}
-
+/*Properties of the main div element*/
 .maindiv {
         background-color:white; 
         color:black; 
         width:300px; 
         padding:20px;
         border-radius:25px;
-        margin:auto;
-        align-self:center;
+        margin:auto; /*this works to center the div element, but not part of the instructions*/
+        align-self:center; /*this is closer to the instructions, so have put it in*/
 }
 
