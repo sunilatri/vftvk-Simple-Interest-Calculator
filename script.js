@@ -1,6 +1,18 @@
 function compute()
 {
     var principal = document.getElementById("principal").value;
+//    if (Number.isInteger(principal) != true)
+ //   {
+ //       window.alert("Please Enter a valid number");
+ //       document.getElementById("principal").focus();
+ //       return;
+ //   }
+    if (parseFloat(principal) <= 0) {
+        window.alert("Please Enter a positive number");
+        document.getElementById("principal").value = '';
+        document.getElementById("principal").focus();
+        return;
+    }
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = years * principal * (parseFloat(rate) / 100);
